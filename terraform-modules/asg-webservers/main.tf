@@ -6,7 +6,7 @@ resource "aws_launch_configuration" "launch-conf" {
   user_data                   = file("${path.module}/user_data.sh")
   associate_public_ip_address = true
   security_groups             = [aws_security_group.alb.id]
-  key_name                    = "ubuntu"
+  key_name                    = "${var.key_name}"
 
   lifecycle {
     create_before_destroy = true
