@@ -1,7 +1,7 @@
 # terraform-asg-vpc
 I built this as a personal project to learn Terraform and AWS. 
 
-It deploys a virtual private network in AWS and then an auto-scaling group, load balanced web-server running ngnix across three regions. 
+It deploys a virtual private network in AWS and then an auto-scaling group, load balanced web-server running nginx across three regions. 
 
 Everything is utilizing the free tier so nothing here will cost anyone any money, although it's still a good idea to setup an alert to be sure. 
 
